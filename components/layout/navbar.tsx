@@ -62,7 +62,7 @@ export default function Nav() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="flex justify-between items-center p-4 absolute top-0 w-full h-[80px] z-50 lg:px-[80px] border-b border-[#F2F4F7] bg-white">
+    <nav className="flex justify-between items-center p-4 absolute top-0 w-full h-[80px] z-50 lg:px-[80px] border-b border-gray-200 bg-white">
       <div className="flex items-center gap-10 w-full justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[40px] lg:h-[40px] bg-[#335CFF] rounded-xl flex items-center justify-center text-white font-cal-sans text-xl shadow-sm overflow-hidden relative">
@@ -118,19 +118,16 @@ export default function Nav() {
             className="lg:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 rounded-md hover:bg-black/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/10 transition"
           >
             <span
-              className={`block w-6 h-0.5 bg-[#525866] transition-all duration-300 rounded-full ${
-                isMenuOpen ? "rotate-45 translate-y-2" : ""
-              }`}
+              className={`block w-6 h-0.5 bg-[#525866] transition-all duration-300 rounded-full ${isMenuOpen ? "rotate-45 translate-y-2" : ""
+                }`}
             ></span>
             <span
-              className={`block w-6 h-0.5 bg-[#525866] transition-all duration-300 rounded-full ${
-                isMenuOpen ? "opacity-0" : ""
-              }`}
+              className={`block w-6 h-0.5 bg-[#525866] transition-all duration-300 rounded-full ${isMenuOpen ? "opacity-0" : ""
+                }`}
             ></span>
             <span
-              className={`block w-6 h-0.5 bg-[#525866] transition-all duration-300 rounded-full ${
-                isMenuOpen ? "-rotate-45 -translate-y-2" : ""
-              }`}
+              className={`block w-6 h-0.5 bg-[#525866] transition-all duration-300 rounded-full ${isMenuOpen ? "-rotate-45 -translate-y-2" : ""
+                }`}
             ></span>
           </button>
         </div>

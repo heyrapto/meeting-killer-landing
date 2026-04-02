@@ -146,3 +146,8 @@
   --radius-4xl: calc(var(--radius) * 2.6);
   --radius-full: 9999px;
 }
+
+.hide-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
