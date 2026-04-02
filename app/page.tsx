@@ -19,10 +19,10 @@ export default function Home() {
     <React.Fragment>
       <main className="bg-[#F5F7FA] space-y-4 sm:space-y-6 overflow-hidden min-h-screen pt-4 sm:pt-6">
         <Hero />
-        <ProblemSection />
         <FeaturesSection />
         <BenefitSection />
         <TypesSection />
+        <ProblemSection />
         <FAQsSection />
         <CTA />
         <Footer />
