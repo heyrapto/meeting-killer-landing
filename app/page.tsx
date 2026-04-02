@@ -20,7 +20,6 @@ export default function Home() {
     <React.Fragment>
       <main className="bg-[#f4f4f8] space-y-4 sm:space-y-6 min-h-screen pt-4 sm:pt-6">
         <Hero />
-
         <FeaturesSection />
         <HowItWorks />
         <BenefitSection />

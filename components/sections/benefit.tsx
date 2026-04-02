@@ -96,7 +96,7 @@ export default function BenefitSection() {
                 </div>
 
                 <motion.div
-                  className="size-14 sm:size-16 rounded-2xl border border-[#C0D5FF] bg-[#F5F7FA] inline-flex items-center justify-center text-[#4F46E5] font-medium text-2xl font-cal-sans shadow-sm"
+                  className="size-14 sm:size-16 rounded-full border border-[#C0D5FF] bg-[#F5F7FA] inline-flex items-center justify-center text-[#4F46E5] font-medium text-2xl font-cal-sans shadow-sm"
                   variants={popIn}
                 >
                   0{benefit.id}

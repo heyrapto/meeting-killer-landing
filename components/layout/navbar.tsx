@@ -63,7 +63,7 @@ export default function Nav() {
   }, [isMenuOpen]);
 
   return (
-    <nav className="flex justify-between items-center p-4 absolute top-0 w-full h-[80px] z-50 lg:px-[80px] border-b border-gray-200 bg-white">
+    <nav className="flex justify-between items-center p-4 absolute top-0 w-full h-[80px] z-50 lg:px-[80px] border-b border-gray-100 bg-white">
       <div className="flex items-center gap-10 w-full justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <Image

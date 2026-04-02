@@ -46,7 +46,7 @@ export default function CTA() {
           className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#818CF8]/5 rounded-full blur-[120px] pointer-events-none"
           variants={fadeIn}
         />
-        
+
         {/* Dotted pattern matching Hero */}
         <motion.div
           className="h-full w-full absolute top-0 left-0 right-0 opacity-[0.03] pointer-events-none"
@@ -63,7 +63,7 @@ export default function CTA() {
               className="font-semibold font-cal-sans text-[#122368] text-3xl sm:text-4xl md:text-[55px] leading-[1.1] -tracking-[0.01em]  mx-auto"
               variants={fadeUp}
             >
-              If standups feel like work, it’s time replace it.
+              If standups feel like work, it’s time to replace it.
             </motion.h2>
             <motion.p
               className="font-normal font-figtree text-[16px] sm:text-[18px] sm:leading-[28px] text-[#525866]  mx-auto"

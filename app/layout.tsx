@@ -1,7 +1,6 @@
 "use client";
-import { Figtree, Geist, Geist_Mono, Inter, Rubik } from "next/font/google";
+import { Outfit, Geist, Geist_Mono, Inter, Rubik } from "next/font/google";
 import "./globals.css";
-import { Metadata } from "next";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const figtree = Figtree({
+const outfit = Outfit({
   variable: "--font-cal-sans",
   subsets: ["latin"],
 });
@@ -35,20 +34,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link
-          rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossOrigin="anonymous"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${figtree.variable} ${rubik.variable} ${inter.variable} antialiased relative bg-[#EFF4FF]`}
+        className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} ${rubik.variable} ${inter.variable} antialiased relative bg-[#EFF4FF]`}
       >
         {children}
       </body>

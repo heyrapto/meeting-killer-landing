@@ -68,7 +68,7 @@ export default function TypesSection() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
-                        className="text-[32px] sm:text-[40px] lg:text-[48px] font-semibold text-[#122368] leading-[1.1] max-w-3xl mx-auto"
+                        className="text-[32px] sm:text-[40px] lg:text-[48px] font-semibold text-[#122368] leading-[1.1] max-w-3xl mx-auto font-cal-sans"
                     >
                         Made for teams that move fast and hate wasted meetings.
                     </motion.h2>
@@ -106,39 +106,40 @@ export default function TypesSection() {
                             variants={fadeUp}
                             className={`
                 relative 
-                rounded-[32px] 
-                overflow-hidden 
-                group 
-                cursor-pointer 
-                shadow-lg hover:shadow-xl 
-                transition-all duration-500
                 ${team.className}
               `}
                         >
-                            {/* Image */}
                             <motion.div
-                                className="absolute inset-0"
-                                initial={{ scale: 1 }}
-                                whileHover={{ scale: 1.06 }}
-                                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                                className="relative h-full rounded-[33px] bg-[#dfdef5] p-3 sm:p-4 group cursor-pointer overflow-hidden"
+                                whileHover={{ scale: 1.005 }}
                             >
-                                <Image
-                                    src={team.image}
-                                    alt={team.name}
-                                    fill
-                                    className="object-cover"
-                                />
+                                <div className="relative h-full w-full rounded-2xl overflow-hidden">
+                                    {/* Image */}
+                                    <motion.div
+                                        className="absolute inset-0"
+                                        initial={{ scale: 1 }}
+                                        whileHover={{ scale: 1.06 }}
+                                        transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+                                    >
+                                        <Image
+                                            src={team.image}
+                                            alt={team.name}
+                                            fill
+                                            className="object-cover"
+                                        />
+                                    </motion.div>
+
+                                    {/* Overlay */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-all duration-700" />
+
+                                    {/* Text */}
+                                    <div className="absolute inset-0 flex items-end p-6">
+                                        <span className="text-white font-semibold text-xl lg:text-2xl drop-shadow-lg">
+                                            {team.name}
+                                        </span>
+                                    </div>
+                                </div>
                             </motion.div>
-
-                            {/* Overlay */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-all duration-700" />
-
-                            {/* Text */}
-                            <div className="absolute inset-0 flex items-end p-6">
-                                <span className="text-white font-semibold text-xl lg:text-2xl drop-shadow-lg">
-                                    {team.name}
-                                </span>
-                            </div>
                         </motion.div>
                     ))}
                 </motion.div>
