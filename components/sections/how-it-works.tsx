@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { MessageSquare, Sparkles, Share2 } from "lucide-react";
+import { MessageSquare, Sparkles, Share2, Bot } from "lucide-react";
 
 const steps = [
   {
@@ -16,7 +16,7 @@ const steps = [
     title: "AI structures the signal",
     description:
       "Meeting Killer processes the update and turns it into a clean summary with completed work and blockers.",
-    icon: Sparkles,
+    icon: Bot,
   },
   {
     id: "03",
@@ -45,10 +45,10 @@ const LayeredCard = ({
     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
   >
     {/* Back Layer */}
-    <div className="absolute inset-0 bg-brand-10 rounded-[40px] translate-x-4 translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition-transform duration-700 ease-out" />
+    <div className="absolute inset-0 bg-brand-10 rounded-[40px] translate-x-4 translate-y-4 transition-transform duration-700 ease-out" />
 
     {/* Front Layer */}
-    <div className="relative h-full bg-white border border-gray-200 rounded-[40px] p-10 lg:p-14 flex flex-col justify-between shadow-soft-lg group-hover:border-brand-60 transition-colors duration-500 overflow-hidden">
+    <div className="relative h-full bg-white border border-gray-200 rounded-[40px] p-10 lg:p-14 flex flex-col justify-between shadow-soft-lg transition-colors duration-500 overflow-hidden">
       <div className="flex flex-col gap-12 h-full relative z-10">
         <span className="bg-brand-60 text-white w-14 h-14 inline-flex items-center justify-center rounded-full font-bold text-lg shadow-md">
           {index + 1}/{steps.length}
@@ -58,7 +58,7 @@ const LayeredCard = ({
       </div>
 
       {/* Glow */}
-      <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-5 rounded-full blur-3xl opacity-50 group-hover:bg-brand-20 transition-colors duration-700" />
+      <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-brand-5 rounded-full blur-3xl opacity-50 transition-colors duration-700" />
     </div>
   </motion.div>
 );
@@ -97,7 +97,7 @@ export default function HowItWorks() {
               <div className="flex flex-col gap-10 h-full justify-center">
 
                 {/* ICON */}
-                <div className="w-24 h-24 bg-brand-5 rounded-3xl flex items-center justify-center text-brand-60 border border-brand-10 shadow-sm group-hover:scale-110 transition-transform duration-500">
+                <div className="w-24 h-24 bg-brand-5 rounded-3xl flex items-center justify-center text-brand-60 border border-brand-10 shadow-sm transition-transform duration-500">
                   <step.icon size={44} strokeWidth={1.25} />
                 </div>
 
