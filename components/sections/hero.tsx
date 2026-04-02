@@ -133,6 +133,21 @@ export default function Hero() {
               </div>
             </motion.div>
           </div>
+
+          {/* Social Proof Strip */}
+          <motion.div 
+            variants={fadeUp}
+            className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 pt-12 border-t border-[#F2F4F7]"
+          >
+            {["Less meeting time.", "Better updates.", "Clearer team visibility."].map((text, i) => (
+              <div key={i} className="flex items-center gap-2">
+                <div className="w-1.5 h-1.5 rounded-full bg-[#335CFF]"></div>
+                <span className="text-[#525866] font-medium font-figtree text-sm sm:text-base tracking-tight">
+                  {text}
+                </span>
+              </div>
+            ))}
+          </motion.div>
         </div>
       </div>
     </motion.section>

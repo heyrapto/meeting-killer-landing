@@ -1,26 +1,41 @@
 "use client";
 import React from 'react';
 import { motion, type Variants } from 'framer-motion';
-import { Blocks, Code2, Users, Globe, Shuffle } from 'lucide-react';
+import Image from 'next/image';
 
 const teams = [
-    { name: "Product Teams", icon: Blocks },
-    { name: "Engineering Teams", icon: Code2 },
-    { name: "Agency Teams", icon: Users },
-    { name: "Remote Teams", icon: Globe },
-    { name: "Cross-Functional", icon: Shuffle },
+    { 
+        name: "Product Teams", 
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+        name: "Engineering Teams", 
+        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+        name: "Agency Teams", 
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+        name: "Remote Teams", 
+        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" 
+    },
+    { 
+        name: "Cross-Functional", 
+        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" 
+    },
 ];
 
 export default function TypesSection() {
     const container: Variants = {
         hidden: {},
         show: {
-            transition: { staggerChildren: 0.08, delayChildren: 0.1 },
+            transition: { staggerChildren: 0.1, delayChildren: 0.1 },
         },
     };
 
     const fadeUp: Variants = {
-        hidden: { opacity: 0, y: 16 },
+        hidden: { opacity: 0, y: 20 },
         show: {
             opacity: 1,
             y: 0,
@@ -29,9 +44,9 @@ export default function TypesSection() {
     };
 
     return (
-        <section className="py-16 lg:py-24 px-4 sm:px-6">
-            <div className="max-w-[860px] mx-auto text-center space-y-12">
-
+        <section className="py-16 lg:py-24 px-4 sm:px-6 relative z-10">
+            <div className="max-w-[1200px] mx-auto text-center space-y-16">
+                
                 {/* Header */}
                 <div className="space-y-4">
                     <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
@@ -57,27 +72,53 @@ export default function TypesSection() {
                     </motion.p>
                 </div>
 
-                {/* Pills */}
+                {/* Team Grid */}
                 <motion.div
                     variants={container}
                     initial="hidden"
                     whileInView="show"
-                    viewport={{ once: true, amount: 0.2 }}
-                    className="flex flex-wrap justify-center gap-3"
+                    viewport={{ once: true, amount: 0.1 }}
+                    className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
                 >
-                    {teams.map((team) => {
-                        const Icon = team.icon;
-                        return (
+                    {teams.map((team) => (
+                        <motion.div
+                            key={team.name}
+                            variants={fadeUp}
+                            className="relative h-[300px] sm:h-[400px] rounded-[40px] overflow-hidden group cursor-pointer shadow-lg hover:shadow-xl transition-shadow duration-500"
+                        >
+                            {/* Image with Grayscale Logic */}
                             <motion.div
-                                key={team.name}
-                                variants={fadeUp}
-                                className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full bg-white border border-[#E2E8F0] shadow-sm text-[#122368] font-figtree font-medium text-[15px]"
+                                className="absolute inset-0"
+                                initial={{ filter: "grayscale(100%)", scale: 1 }}
+                                whileHover={{ filter: "grayscale(0%)", scale: 1.05 }}
+                                transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                             >
-                                <Icon size={17} className="text-[#335CFF]" strokeWidth={1.75} />
-                                {team.name}
+                                <Image
+                                    src={team.image}
+                                    alt={team.name}
+                                    fill
+                                    className="object-cover"
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                />
                             </motion.div>
-                        );
-                    })}
+                            
+                            {/* Overlay */}
+                            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-700" />
+                            
+                            {/* Animated Text Container with Flexbox */}
+                            <motion.div
+                                layout
+                                className="absolute inset-0 flex p-8 transition-all duration-500 ease-[0.22, 1, 0.36, 1] items-end justify-end group-hover:items-center group-hover:justify-center"
+                            >
+                                <motion.span 
+                                    layout
+                                    className="text-white font-semibold font-cal-sans text-2xl lg:text-3xl whitespace-nowrap drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] transition-all duration-500"
+                                >
+                                    {team.name}
+                                </motion.span>
+                            </motion.div>
+                        </motion.div>
+                    ))}
                 </motion.div>
 
             </div>
