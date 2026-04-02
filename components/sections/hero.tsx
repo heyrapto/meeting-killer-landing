@@ -60,7 +60,7 @@ export default function Hero() {
               </motion.div>
 
               <motion.h1
-                className="text-[#122368] text-4xl sm:text-5xl lg:text-[72px]/[1.1] font-cal-sans tracking-[-2%] font-bold"
+                className="text-[#122368] text-4xl sm:text-5xl lg:text-[72px]/[1.1] font-cal-sans tracking-[-2%] font-semibold"
                 variants={fadeUp}
               >
                 Kill the daily standup. <br className="hidden sm:block" /> Keep the daily clarity.

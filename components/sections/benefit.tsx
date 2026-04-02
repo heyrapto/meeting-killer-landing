@@ -64,7 +64,7 @@ export default function BenefitSection() {
           <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-white/40 bg-[#122368]/5 text-[#122368] text-sm font-medium font-figtree shadow-sm">
             Why it works
           </div>
-          <h4 className="font-normal font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
+          <h4 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
             Everything a standup should do.<br />None of the drag.
           </h4>
         </motion.div>
@@ -89,7 +89,7 @@ export default function BenefitSection() {
               </motion.div>
 
               <div className="space-y-4 z-10">
-                <header className="text-[#122368] font-normal font-cal-sans text-2xl sm:text-[32px]/[120%] -tracking-[1%]">
+                <header className="text-[#122368] font-semibold font-cal-sans text-2xl sm:text-[32px]/[120%] -tracking-[1%]">
                   {benefit.title}
                 </header>
                 <p className="text-[#525866] font-normal font-figtree text-base sm:text-[20px]/[150%] -tracking-[1%]">

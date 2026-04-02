@@ -34,7 +34,7 @@ export default function FeaturesSection() {
           <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
              What you get
           </div>
-          <h3 className="font-normal font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
+          <h3 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
             Simple for the team. <br/> Useful for managers.
           </h3>
         </motion.div>
@@ -60,7 +60,7 @@ export default function FeaturesSection() {
                  </div>
               </div>
               <div className="space-y-4">
-                <header className="font-normal font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
+                <header className="font-semibold font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
                   Flexible Update Formats
                 </header>
                 <p className="text-[#525866] font-normal font-figtree text-base md:text-[20px]/[150%] -tracking-[1%]">
@@ -82,7 +82,7 @@ export default function FeaturesSection() {
                  </div>
               </div>
               <div className="space-y-4">
-                <header className="font-normal font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
+                <header className="font-semibold font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
                   AI Summaries
                 </header>
                 <p className="text-[#525866] font-normal font-figtree text-base md:text-[20px]/[150%] -tracking-[1%]">
@@ -106,7 +106,7 @@ export default function FeaturesSection() {
                  </div>
               </div>
               <div className="space-y-4">
-                <header className="font-normal font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
+                <header className="font-semibold font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
                   Deadlines & Tracking
                 </header>
                 <p className="text-[#525866] font-normal font-figtree text-base md:text-[20px]/[150%] -tracking-[1%]">
@@ -128,7 +128,7 @@ export default function FeaturesSection() {
                  </div>
               </div>
               <div className="space-y-4">
-                <header className="font-normal font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
+                <header className="font-semibold font-cal-sans text-2xl md:text-4xl/[44px] text-[#122368] -tracking-[1%]">
                   Quick Scan Feed & Admin Control
                 </header>
                 <p className="text-[#525866] font-normal font-figtree text-base md:text-[20px]/[150%] -tracking-[1%]">

@@ -51,7 +51,7 @@ export default function CTA() {
         <div className="relative max-w-[840px] mx-auto space-y-10 text-center py-20 sm:py-24 lg:py-32 px-5 z-10">
           <div className="space-y-6">
             <motion.h2
-              className="font-semibold font-cal-sans text-white text-3xl sm:text-4xl md:text-[56px] leading-[1.1] -tracking-[0.01em] max-w-[900px] mx-auto"
+              className="font-semibold font-cal-sans text-white text-3xl sm:text-4xl md:text-[55px] leading-[1.1] -tracking-[0.01em] max-w-[900px] mx-auto"
               variants={fadeUp}
             >
               If the standup meeting feels heavier than the work, it is time to replace it.

@@ -38,7 +38,7 @@ function FAQItem({ faq, isOpen, onToggle }: FAQItemProps) {
                 onClick={onToggle}
                 className="w-full px-6 sm:px-8 lg:px-[32px] py-6 sm:py-7 lg:py-[32px] flex items-center justify-between text-left cursor-pointer"
             >
-                <h3 className="text-[#122368] font-cal-sans text-[16px] sm:text-[18px] lg:text-[20px] font-medium leading-[130%] sm:leading-[125%] lg:leading-[120%] tracking-[-0.4px] pr-4">
+                <h3 className="text-[#122368] font-cal-sans text-[16px] sm:text-[18px] lg:text-[20px] font-semibold leading-[130%] sm:leading-[125%] lg:leading-[120%] tracking-[-0.4px] pr-4">
                     {faq.question}
                 </h3>
                 <motion.div
@@ -101,7 +101,7 @@ export default function FAQsSection() {
             <div className="relative z-10">
                 {/* Section Header */}
                 <div className="text-center mb-12 sm:mb-16 lg:mb-[64px]">
-                    <h2 className="font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px] font-medium leading-[110%] sm:leading-[105%] lg:leading-[64px] mb-4 sm:mb-6 lg:mb-[24px] tracking-[-1.44px] max-w-[800px] mx-auto">
+                    <h2 className="font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px] font-semibold leading-[110%] sm:leading-[105%] lg:leading-[64px] mb-4 sm:mb-6 lg:mb-[24px] tracking-[-1.44px] max-w-[800px] mx-auto">
                         Frequently Asked Questions
                     </h2>
                     <p className="text-[#525866] font-figtree text-[14px] sm:text-[15px] lg:text-[16px] leading-[150%] tracking-[-0.32px] max-w-[600px] mx-auto">
