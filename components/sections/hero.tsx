@@ -2,6 +2,7 @@
 
 import { motion, type Variants } from "framer-motion";
 import Nav from "../layout/navbar";
+import Image from "next/image";
 
 const container: Variants = {
   hidden: {},
@@ -55,12 +56,9 @@ export default function Hero() {
 
           <div className="flex items-center flex-col gap-10 text-center relative z-10 pt-10">
             <div className="max-w-[800px] mx-auto space-y-6">
-              <motion.div variants={fadeUp} className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-[#F5F7FA] text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
-                Async standups for modern teams
-              </motion.div>
 
               <motion.h1
-                className="text-[#122368] text-4xl sm:text-5xl lg:text-[72px]/[1.1] font-cal-sans tracking-[-2%] font-semibold"
+                className="text-[#122368] text-4xl sm:text-5xl lg:text-[80px]/[1.1] font-cal-sans tracking-[-2%] font-bold"
                 variants={fadeUp}
               >
                 Kill the daily standup. <br className="hidden sm:block" /> Keep the daily clarity.
@@ -95,59 +93,23 @@ export default function Hero() {
                 See How It Works
               </motion.a>
             </motion.div>
-
-            <motion.p className="text-sm font-figtree text-[#99A0AE] max-w-[400px] text-center" variants={fadeUp}>
-              Built for teams that want fewer meetings, clearer updates, and faster blocker visibility.
-            </motion.p>
           </div>
 
-          <div className="flex justify-center items-center relative z-20 mt-10">
+          <div className="flex justify-center items-center relative z-20">
             <motion.div
-              className="rounded-[32px] bg-[#F5F7FA] border border-[#E2E8F0] p-3 sm:p-5 mx-4 max-w-[1100px] w-full"
+              className="rounded-[32px] bg-[#F5F7FA]   p-4"
               variants={fadeUp}
             >
-              {/* Placeholder for dashboard mockup */}
-              <div className="w-full aspect-[16/9] bg-white rounded-2xl border border-[#F2F4F7] overflow-hidden flex flex-col">
-                <div className="h-12 border-b border-[#F2F4F7] bg-gray-50 flex items-center px-4 gap-2">
-                  <div className="w-3 h-3 rounded-full bg-[#f87171]"></div>
-                  <div className="w-3 h-3 rounded-full bg-[#fbbf24]"></div>
-                  <div className="w-3 h-3 rounded-full bg-[#34d399]"></div>
-                </div>
-                <div className="flex-1 p-8 flex flex-col gap-6 items-center justify-center bg-white/50 backdrop-blur-sm relative overflow-hidden">
-                  {/* Decorative abstract elements inside the dashboard UI */}
-                  <div className="w-64 h-64 bg-[#4F46E5]/5 rounded-full absolute -top-10 -right-10 blur-3xl"></div>
-                  <div className="w-64 h-64 bg-[#4F46E5]/5 rounded-full absolute -bottom-10 -left-10 blur-3xl"></div>
-
-                  <div className="w-full max-w-2xl bg-white border border-[#F2F4F7] rounded-xl p-6 relative z-10 flex flex-col gap-4">
-                    <div className="flex items-center justify-between border-b border-[#F2F4F7] pb-4">
-                      <div className="font-cal-sans text-[#122368] text-xl">Daily Summary</div>
-                      <div className="text-sm text-[#99A0AE] font-figtree">Hmm</div>
-                    </div>
-                    <div className="space-y-3">
-                      <div className="h-4 w-3/4 bg-[#F5F7FA] rounded"></div>
-                      <div className="h-4 w-5/6 bg-[#F5F7FA] rounded"></div>
-                      <div className="h-4 w-2/3 bg-[#F5F7FA] rounded"></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Image
+                src="/hero.svg"
+                alt="Hero Image"
+                width={1199}
+                height={676}
+                className="rounded-2xl "
+                priority
+              />
             </motion.div>
           </div>
-
-          {/* Social Proof Strip */}
-          <motion.div
-            variants={fadeUp}
-            className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 pt-12 border-t border-[#F2F4F7]"
-          >
-            {["Less meeting time.", "Better updates.", "Clearer team visibility."].map((text, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#4F46E5]"></div>
-                <span className="text-[#525866] font-medium font-figtree text-sm sm:text-base tracking-tight">
-                  {text}
-                </span>
-              </div>
-            ))}
-          </motion.div>
         </div>
       </div>
     </motion.section>
