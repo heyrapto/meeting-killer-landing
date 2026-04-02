@@ -118,8 +118,8 @@ export default function TypesSection() {
                             {/* Image */}
                             <motion.div
                                 className="absolute inset-0"
-                                initial={{ filter: "grayscale(100%)", scale: 1 }}
-                                whileHover={{ filter: "grayscale(0%)", scale: 1.05 }}
+                                initial={{ scale: 1 }}
+                                whileHover={{ scale: 1.06 }}
                                 transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
                             >
                                 <Image
@@ -131,7 +131,7 @@ export default function TypesSection() {
                             </motion.div>
 
                             {/* Overlay */}
-                            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-700" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-80 group-hover:opacity-60 transition-all duration-700" />
 
                             {/* Text */}
                             <div className="absolute inset-0 flex items-end p-6">
