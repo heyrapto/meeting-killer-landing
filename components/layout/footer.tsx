@@ -22,7 +22,7 @@ export function Footer() {
         </div>
 
         <div className="flex items-center flex-wrap justify-center max-md:flex-col gap-6 pt-10">
-          <span className="font-normal font-cal-sans text-5xl sm:text-[120px] md:text-[160px] lg:text-[200px]/[100%] text-[#F5F7FA] text-center pointer-events-none select-none tracking-tight">
+          <span className="font-normal font-cal-sans text-5xl sm:text-[120px] md:text-[160px] lg:text-[200px]/[100%] text-[#97BAFF] text-center pointer-events-none select-none tracking-tight">
             MeetingKiller
           </span>
         </div>
