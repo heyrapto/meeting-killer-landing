@@ -45,12 +45,12 @@ const LayeredCard = ({
     transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
   >
     {/* Back Layer */}
-    <div className="absolute inset-0 bg-brand-10 rounded-[40px] translate-x-4 translate-y-4 transition-transform duration-700 ease-out" />
+    <div className="absolute inset-0 bg-[#dfdef5] rounded-[40px] translate-x-4 translate-y-4 transition-transform duration-700 ease-out" />
 
     {/* Front Layer */}
     <div className="relative h-full bg-white border border-gray-200 rounded-[40px] p-10 lg:p-14 flex flex-col justify-between shadow-soft-lg transition-colors duration-500 overflow-hidden">
       <div className="flex flex-col gap-12 h-full relative z-10">
-        <span className="bg-brand-60 text-white w-14 h-14 inline-flex items-center justify-center rounded-full font-bold text-lg shadow-md">
+        <span className="bg-[#4F46E5] text-white w-14 h-14 inline-flex items-center justify-center rounded-full font-bold text-lg shadow-md">
           {index + 1}/{steps.length}
         </span>
 
@@ -79,7 +79,7 @@ export default function HowItWorks() {
               {/* FIXED TITLE */}
               <h2 className="text-5xl lg:text-[80px] font-semibold text-gray-800 tracking-tight leading-[0.95]">
                 How it{" "}
-                <span className="text-brand-60 italic">Works</span>
+                <span className="text-[#4F46E5] italic">Works</span>
               </h2>
 
               <p className="text-gray-500 text-xl leading-relaxed">
@@ -97,7 +97,7 @@ export default function HowItWorks() {
               <div className="flex flex-col gap-10 h-full justify-center">
 
                 {/* ICON */}
-                <div className="w-24 h-24 bg-brand-5 rounded-3xl flex items-center justify-center text-brand-60 border border-brand-10 shadow-sm transition-transform duration-500">
+                <div className="w-24 h-24 bg-[#dfdef5] rounded-3xl flex items-center justify-center text-brand-60 border border-brand-10 shadow-sm transition-transform duration-500">
                   <step.icon size={44} strokeWidth={1.25} />
                 </div>
 

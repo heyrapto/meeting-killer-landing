@@ -80,23 +80,23 @@ export default function BenefitSection() {
             return (
               <motion.div
                 key={benefit.id}
-                className="w-full md:w-[467px] h-[300px] md:h-[400px] shrink-0 bg-white border border-[#E2E8F0] shadow-sm rounded-[32px] flex flex-col justify-between p-7 pt-10 snap-center relative overflow-hidden"
+                className="w-full md:w-[467px] h-[300px] md:h-[400px] shrink-0 bg-[#dfdef5] rounded-[32px] flex flex-col justify-between p-7 pt-10 snap-center relative overflow-hidden"
                 variants={fadeUp}
-                whileHover={{ y: -6, boxShadow: "0 10px 40px -10px rgba(0,0,0,0.08)" }}
+                whileHover={{ y: -6 }}
                 whileTap={{ scale: 0.995 }}
                 transition={{ type: "spring", stiffness: 250, damping: 22 }}
               >
                 {/* Top-right decorative icon — replaces the empty arc */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F46E5]/5 rounded-bl-[100px] pointer-events-none flex items-center justify-center">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F46E5]/10 rounded-bl-[100px] pointer-events-none flex items-center justify-center">
                   <Icon
-                    className="text-[#4F46E5]/30 translate-x-3 -translate-y-3"
+                    className="text-[#4F46E5]/20 translate-x-3 -translate-y-3"
                     size={44}
                     strokeWidth={1.25}
                   />
                 </div>
 
                 <motion.div
-                  className="size-14 sm:size-16 rounded-full border border-[#C0D5FF] bg-[#F5F7FA] inline-flex items-center justify-center text-[#4F46E5] font-medium text-2xl font-cal-sans shadow-sm"
+                  className="size-14 sm:size-16 rounded-full border border-white/20 bg-white/50 inline-flex items-center justify-center text-[#4F46E5] font-semibold text-2xl font-cal-sans shadow-sm"
                   variants={popIn}
                 >
                   0{benefit.id}
