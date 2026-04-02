@@ -56,7 +56,7 @@ function FAQItem({ faq, isOpen, onToggle }: FAQItemProps) {
                     >
                         <path
                             d="M19 9L12 16L5 9"
-                            stroke="#335CFF"
+                            stroke="#4F46E5"
                             strokeWidth="2"
                             strokeLinecap="round"
                             strokeLinejoin="round"

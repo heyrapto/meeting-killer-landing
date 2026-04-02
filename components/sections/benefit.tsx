@@ -66,7 +66,7 @@ export default function BenefitSection() {
     >
       <div className="space-y-16 max-w-[1450px] mx-auto">
         <motion.div variants={fadeUp} className="text-center space-y-4">
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
             Why it works
           </div>
           <h4 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px] lg:leading-[64px]">
@@ -87,16 +87,16 @@ export default function BenefitSection() {
                 transition={{ type: "spring", stiffness: 250, damping: 22 }}
               >
                 {/* Top-right decorative icon — replaces the empty arc */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#335CFF]/5 rounded-bl-[100px] pointer-events-none flex items-center justify-center">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#4F46E5]/5 rounded-bl-[100px] pointer-events-none flex items-center justify-center">
                   <Icon
-                    className="text-[#335CFF]/30 translate-x-3 -translate-y-3"
+                    className="text-[#4F46E5]/30 translate-x-3 -translate-y-3"
                     size={44}
                     strokeWidth={1.25}
                   />
                 </div>
 
                 <motion.div
-                  className="size-14 sm:size-16 rounded-2xl border border-[#C0D5FF] bg-[#F5F7FA] inline-flex items-center justify-center text-[#335CFF] font-medium text-2xl font-cal-sans shadow-sm"
+                  className="size-14 sm:size-16 rounded-2xl border border-[#C0D5FF] bg-[#F5F7FA] inline-flex items-center justify-center text-[#4F46E5] font-medium text-2xl font-cal-sans shadow-sm"
                   variants={popIn}
                 >
                   0{benefit.id}

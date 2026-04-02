@@ -34,7 +34,7 @@ export default function ProblemSection() {
             whileInView="show"
             viewport={{ once: true, amount: 0.2 }}
         >
-            <div className="bg-[#E5EDFF] rounded-[40px] py-16 md:py-24 max-sm:px-4">
+            <div className="bg-[#dfdef5] rounded-[40px] py-16 md:py-24 max-sm:px-4">
                 <div className="relative mx-auto max-w-[1200px]">
                     {/* Section Title */}
                     <motion.div
@@ -44,13 +44,13 @@ export default function ProblemSection() {
                         transition={{ duration: 0.5 }}
                         className="text-center space-y-4 mb-16 px-4"
                     >
-                        <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
+                        <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
                             Why teams switch
                         </div>
                         <h2 className="text-[32px] sm:text-[40px] lg:text-[56px] font-semibold font-cal-sans text-[#122368] leading-[1.1] max-w-5xl mx-auto">
                             Daily standups are expensive <br className="hidden md:block" />when they happen live.
                         </h2>
-                        {/* <p className="text-[#335CFF] font-medium font-figtree text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
+                        {/* <p className="text-[#4F46E5] font-medium font-figtree text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
                             The problem is not status updates. The problem is pulling everyone into the same room at the same time, every single day. Meeting Killer gives teams the same daily rhythm without the interruption.
                         </p> */}
                     </motion.div>
@@ -69,10 +69,10 @@ export default function ProblemSection() {
                                 <div className="text-[#525866] font-medium text-sm lg:text-base font-figtree uppercase tracking-wider">
                                     Capability
                                 </div>
-                                <div className="text-[#335CFF] font-semibold text-sm lg:text-lg font-cal-sans text-center flex items-center justify-center gap-2">
+                                <div className="text-[#4F46E5] font-semibold text-sm lg:text-lg font-cal-sans text-center flex items-center justify-center gap-2">
                                     Meeting Killer
                                 </div>
-                                <div className="text-[#525866] font-medium text-sm lg:text-lg font-cal-sans text-center flex items-center justify-center gap-2 opacity-60">
+                                <div className="text-[#525866] font-medium text-sm lg:text-lg font-cal-sans text-center flex items-center justify-center gap-2">
                                     Live Standup
                                 </div>
                             </div>
@@ -84,8 +84,7 @@ export default function ProblemSection() {
                                 return (
                                     <motion.div
                                         key={index}
-                                        whileHover={{ backgroundColor: "rgba(242, 244, 247, 0.4)" }}
-                                        className={`grid grid-cols-[3fr_4fr_4fr] gap-4 lg:gap-6 p-6 lg:p-8 ${isEven ? 'bg-transparent' : 'bg-[#FAFCFF]'} hover:bg-[#F2F4F7] transition-colors duration-200 border-b border-[#F2F4F7] last:border-0`}
+                                        className={`grid grid-cols-[3fr_4fr_4fr] gap-4 lg:gap-6 p-6 lg:p-8 ${isEven ? 'bg-transparent' : 'bg-[#FAFCFF]'} border-b border-[#F2F4F7] last:border-0 cursor-pointer`}
                                     >
                                         {/* Feature Name */}
                                         <div className="text-[#122368] font-medium text-base lg:text-lg flex items-center font-cal-sans">
@@ -94,7 +93,7 @@ export default function ProblemSection() {
 
                                         {/* Meeting Killer */}
                                         <div className="flex items-center gap-3">
-                                            <div className="w-8 h-8 rounded-full bg-[#E5EDFF] text-[#335CFF] flex items-center justify-center shrink-0">
+                                            <div className="w-8 h-8 rounded-full bg-[#E5EDFF] text-[#4F46E5] flex items-center justify-center shrink-0">
                                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M20 6L9 17L4 12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
@@ -103,7 +102,7 @@ export default function ProblemSection() {
                                         </div>
 
                                         {/* Live Standup */}
-                                        <div className="flex items-center gap-3 opacity-60">
+                                        <div className="flex items-center gap-3 ">
                                             <div className="w-8 h-8 rounded-full bg-red-50 text-red-400 flex items-center justify-center shrink-0">
                                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />

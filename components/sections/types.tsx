@@ -4,25 +4,25 @@ import { motion, type Variants } from 'framer-motion';
 import Image from 'next/image';
 
 const teams = [
-    { 
-        name: "Product Teams", 
-        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80" 
+    {
+        name: "Product Teams",
+        image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=800&q=80"
     },
-    { 
-        name: "Engineering Teams", 
-        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80" 
+    {
+        name: "Engineering Teams",
+        image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
     },
-    { 
-        name: "Agency Teams", 
-        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80" 
+    {
+        name: "Agency Teams",
+        image: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
     },
-    { 
-        name: "Remote Teams", 
-        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80" 
+    {
+        name: "Remote Teams",
+        image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=800&q=80"
     },
-    { 
-        name: "Cross-Functional", 
-        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80" 
+    {
+        name: "Cross-Functional",
+        image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80"
     },
 ];
 
@@ -46,10 +46,10 @@ export default function TypesSection() {
     return (
         <section className="py-16 lg:py-24 px-4 sm:px-6 relative z-10">
             <div className="max-w-[1200px] mx-auto text-center space-y-16">
-                
+
                 {/* Header */}
                 <div className="space-y-4">
-                    <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
+                    <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
                         Best fit
                     </div>
                     <motion.h2
@@ -101,16 +101,14 @@ export default function TypesSection() {
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
                             </motion.div>
-                            
-                            {/* Overlay */}
                             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors duration-700" />
-                            
+
                             {/* Animated Text Container with Flexbox */}
                             <motion.div
                                 layout
-                                className="absolute inset-0 flex p-8 transition-all duration-500 ease-[0.22, 1, 0.36, 1] items-end justify-end group-hover:items-center group-hover:justify-center"
+                                className="absolute inset-0 flex p-8 transition-all duration-500 ease-[0.22, 1, 0.36, 1] items-end justify-start"
                             >
-                                <motion.span 
+                                <motion.span
                                     layout
                                     className="text-white font-semibold font-cal-sans text-2xl lg:text-3xl whitespace-nowrap drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] transition-all duration-500"
                                 >

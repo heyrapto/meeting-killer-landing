@@ -55,7 +55,7 @@ export default function Hero() {
 
           <div className="flex items-center flex-col gap-10 text-center relative z-10 pt-10">
             <div className="max-w-[800px] mx-auto space-y-6">
-              <motion.div variants={fadeUp} className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-[#F5F7FA] text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
+              <motion.div variants={fadeUp} className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-[#F5F7FA] text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
                 Async standups for modern teams
               </motion.div>
 
@@ -76,7 +76,7 @@ export default function Hero() {
 
             <motion.div className="flex items-center gap-4 flex-col sm:flex-row w-full sm:w-auto" variants={fadeUp}>
               <motion.a
-                className="w-full sm:w-[200px] h-12 bg-[linear-gradient(0deg,_#335CFF,_#335CFF),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#335CFF,0px_1px_2px_0px_#0E121B3D] rounded-xl hover:scale-101 font-figtree text-sm text-white font-medium flex items-center justify-center transition-transform"
+                className="w-full sm:w-[200px] h-12 bg-[linear-gradient(0deg,_#4F46E5,_#4F46E5),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#4F46E5,0px_1px_2px_0px_#0E121B3D] rounded-xl hover:scale-101 font-figtree text-sm text-white font-medium flex items-center justify-center transition-transform"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.98 }}
                 transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -115,8 +115,8 @@ export default function Hero() {
                 </div>
                 <div className="flex-1 p-8 flex flex-col gap-6 items-center justify-center bg-white/50 backdrop-blur-sm relative overflow-hidden">
                   {/* Decorative abstract elements inside the dashboard UI */}
-                  <div className="w-64 h-64 bg-[#335CFF]/5 rounded-full absolute -top-10 -right-10 blur-3xl"></div>
-                  <div className="w-64 h-64 bg-[#335CFF]/5 rounded-full absolute -bottom-10 -left-10 blur-3xl"></div>
+                  <div className="w-64 h-64 bg-[#4F46E5]/5 rounded-full absolute -top-10 -right-10 blur-3xl"></div>
+                  <div className="w-64 h-64 bg-[#4F46E5]/5 rounded-full absolute -bottom-10 -left-10 blur-3xl"></div>
 
                   <div className="w-full max-w-2xl bg-white border border-[#F2F4F7] rounded-xl p-6 shadow-sm relative z-10 flex flex-col gap-4">
                     <div className="flex items-center justify-between border-b border-[#F2F4F7] pb-4">
@@ -135,13 +135,13 @@ export default function Hero() {
           </div>
 
           {/* Social Proof Strip */}
-          <motion.div 
+          <motion.div
             variants={fadeUp}
             className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 pt-12 border-t border-[#F2F4F7]"
           >
             {["Less meeting time.", "Better updates.", "Clearer team visibility."].map((text, i) => (
               <div key={i} className="flex items-center gap-2">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#335CFF]"></div>
+                <div className="w-1.5 h-1.5 rounded-full bg-[#4F46E5]"></div>
                 <span className="text-[#525866] font-medium font-figtree text-sm sm:text-base tracking-tight">
                   {text}
                 </span>

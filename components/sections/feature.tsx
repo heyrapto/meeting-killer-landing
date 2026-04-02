@@ -31,7 +31,7 @@ export default function FeaturesSection() {
     >
       <div className="space-y-16 max-w-[1312px] mx-auto">
         <motion.div variants={fadeUp} className="text-center space-y-4">
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#335CFF] text-sm font-medium font-figtree shadow-sm">
+          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
             What you get
           </div>
           <h3 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
@@ -49,7 +49,7 @@ export default function FeaturesSection() {
               transition={{ type: "spring", stiffness: 250, damping: 22 }}
             >
               <div className="aspect-[4/3] relative w-full bg-[#F5F7FA] rounded-2xl flex items-center justify-center overflow-hidden border border-[#F2F4F7]">
-                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#335CFF] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#4F46E5] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M12 16V12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M12 8H12.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
                 {/* Fake UI elements */}
@@ -77,7 +77,7 @@ export default function FeaturesSection() {
               transition={{ type: "spring", stiffness: 250, damping: 22 }}
             >
               <div className="aspect-[4/3] relative w-full bg-[#F5F7FA] rounded-2xl flex items-center justify-center overflow-hidden border border-[#F2F4F7]">
-                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#335CFF] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#4F46E5] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21 16V8C21 6.89543 20.1046 6 19 6H5C3.89543 6 3 6.89543 3 8V16C3 17.1046 3.89543 18 5 18H19C20.1046 18 21 17.1046 21 16Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M3 10H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M7 14H7.01" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export default function FeaturesSection() {
               transition={{ type: "spring", stiffness: 250, damping: 22 }}
             >
               <div className="aspect-[4/3] relative w-full bg-[#F5F7FA] rounded-2xl flex items-center justify-center overflow-hidden border border-[#F2F4F7]">
-                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#335CFF] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#4F46E5] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M12 6V12L16 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               </div>
@@ -123,7 +123,7 @@ export default function FeaturesSection() {
               transition={{ type: "spring", stiffness: 250, damping: 22 }}
             >
               <div className="aspect-[4/3] relative w-full bg-[#F5F7FA] rounded-2xl flex items-center justify-center overflow-hidden border border-[#F2F4F7]">
-                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#335CFF] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
+                <div className="w-16 h-16 bg-white rounded-[16px] shadow-sm border border-[#E2E8F0] flex items-center justify-center mb-4 text-[#4F46E5] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
                   <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 6H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M4 12H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /><path d="M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
               </div>

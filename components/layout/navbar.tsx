@@ -3,6 +3,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 
 const links = [
   { name: "Why switch", href: "/#problem" },
@@ -65,18 +66,12 @@ export default function Nav() {
     <nav className="flex justify-between items-center p-4 absolute top-0 w-full h-[80px] z-50 lg:px-[80px] border-b border-gray-200 bg-white">
       <div className="flex items-center gap-10 w-full justify-between">
         <Link href="/" className="flex items-center gap-2 group">
-          <div className="w-8 h-8 sm:w-10 sm:h-10 lg:w-[40px] lg:h-[40px] bg-[#335CFF] rounded-xl flex items-center justify-center text-white font-cal-sans text-xl shadow-sm overflow-hidden relative">
-            MK
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent"
-              initial={{ x: "-100%" }}
-              whileHover={{ x: "100%" }}
-              transition={{ duration: 0.8, ease: "easeInOut" }}
-            />
-          </div>
-          <h1 className="text-xl sm:text-2xl lg:text-[24px]/[120%] font-figtree font-medium text-[#0E121B] tracking-[-6%] leading-[120%] sm:leading-[120px]">
-            Meeting Killer
-          </h1>
+          <Image
+            src="/logo.png"
+            width={200}
+            height={100}
+            alt="Logo"
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -88,7 +83,7 @@ export default function Nav() {
               className="text-[#99A0AE] hover:text-[#0E121B] transition-all duration-300 text-[14px] font-medium relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#335CFF] transition-all duration-300 group-hover:w-full rounded-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#4F46E5] transition-all duration-300 group-hover:w-full rounded-full"></span>
             </Link>
           ))}
         </div>
@@ -104,7 +99,7 @@ export default function Nav() {
           <Link
             href="#"
             role="button"
-            className="hidden lg:block bg-[linear-gradient(0deg,_#335CFF,_#335CFF),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] shadow-[0px_0px_0px_1px_#335CFF,0px_1px_2px_0px_#0E121B3D] text-white font-figtree text-[14px] font-medium border tracking-[-0.084px] border-white/12 hover:opacity-90 transition-all duration-300 px-[14px] py-[10px] rounded-[10px]"
+            className="hidden lg:block bg-[linear-gradient(0deg,_#4F46E5,_#4F46E5),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] shadow-[0px_0px_0px_1px_#4F46E5,0px_1px_2px_0px_#0E121B3D] text-white font-figtree text-[14px] font-medium border tracking-[-0.084px] border-white/12 hover:opacity-90 transition-all duration-300 px-[14px] py-[10px] rounded-[10px]"
           >
             Start Free
           </Link>
@@ -173,7 +168,7 @@ export default function Nav() {
                 </div>
 
                 <motion.div variants={itemVariants} className="space-y-3 pt-4 border-t border-[#F2F4F7]">
-                  <button className="bg-[linear-gradient(0deg,_#335CFF,_#335CFF),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#335CFF,0px_1px_2px_0px_#0E121B3D] text-white font-figtree font-medium px-6 py-3 rounded-[12px] w-full transition-all duration-200">
+                  <button className="bg-[linear-gradient(0deg,_#4F46E5,_#4F46E5),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#4F46E5,0px_1px_2px_0px_#0E121B3D] text-white font-figtree font-medium px-6 py-3 rounded-[12px] w-full transition-all duration-200">
                     <Link href="#" onClick={() => setIsMenuOpen(false)} className="w-full block">
                       Start Free
                     </Link>

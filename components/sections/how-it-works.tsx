@@ -68,9 +68,6 @@ export default function HowItWorks() {
     <section
       id="how-it-works"
       className="max-w-[1440px] mx-auto px-6 lg:px-20 py-24 lg:py-40"
-      style={{
-        minHeight: `${steps.length * 100}vh`, // 👈 KEY FIX
-      }}
     >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 lg:gap-32 relative">
 
@@ -94,7 +91,7 @@ export default function HowItWorks() {
         </div>
 
         {/* RIGHT (Cards) */}
-        <div className="flex flex-col gap-20 lg:gap-32 lg:pt-32">
+        <div className="flex flex-col gap-20 lg:gap-32 lg:pt-0">
           {steps.map((step, i) => (
             <LayeredCard key={i} index={i}>
               <div className="flex flex-col gap-10 h-full justify-center">

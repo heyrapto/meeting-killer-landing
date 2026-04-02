@@ -144,7 +144,7 @@ export default function Action() {
           </div>
           <Link href={"https://brainloom.vercel.app/"} target="_blank">
             <motion.button
-              className="w-full max-w-[300px] h-10 bg-[linear-gradient(0deg,_#335CFF,_#335CFF),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#335CFF,0px_1px_2px_0px_#0E121B3D] rounded-[10px] hover:scale-101 font-figtree text-sm text-white font-medium"
+              className="w-full max-w-[300px] h-10 bg-[linear-gradient(0deg,_#4F46E5,_#4F46E5),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#4F46E5,0px_1px_2px_0px_#0E121B3D] rounded-[10px] hover:scale-101 font-figtree text-sm text-white font-medium"
               variants={fadeUp}
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
@@ -807,7 +807,7 @@ const BuiltForSection = () => {
     ];
 
     return (
-        <section className="relative bg-[#335CFF] py-12 lg:py-[5vw] overflow-hidden">
+        <section className="relative bg-[#4F46E5] py-12 lg:py-[5vw] overflow-hidden">
             {/* Background Blend Image */}
             <div className="absolute inset-0">
                 <img

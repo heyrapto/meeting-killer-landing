@@ -31,11 +31,10 @@ export default function Button({
         transition: { duration: 0.1, ease: "easeIn" },
       }}
       onClick={onClick}
-      className={`relative overflow-hidden rounded-[8px] px-5 py-2.5 font-medium transition-all duration-300 ease-out ${className} ${
-        variant === "primary"
-          ? "bg-[linear-gradient(0deg,_#335CFF,_#335CFF),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#335CFF,0px_1px_2px_0px_#0E121B3D] text-white"
+      className={`relative overflow-hidden rounded-[8px] px-5 py-2.5 font-medium transition-all duration-300 ease-out ${className} ${variant === "primary"
+          ? "bg-[linear-gradient(0deg,_#4F46E5,_#4F46E5),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#4F46E5,0px_1px_2px_0px_#0E121B3D] text-white"
           : "bg-white text-[#122368] hover:bg-gray-50 border border-[#C0D5FF] shadow-sm"
-      }`}
+        }`}
       style={style}
     >
       {/* Shimmer Effect */}

@@ -37,9 +37,9 @@ export default function CTA() {
       viewport={{ once: true, amount: 0.2 }}
     >
       {/* ✅ Removed fixed lg:h-[600px] — let content determine height naturally */}
-      <div className="bg-[#122368] rounded-[40px] overflow-hidden relative">
+      <div className="bg-[#4F46E5] rounded-[40px] overflow-hidden relative">
         <motion.div
-          className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#335CFF]/30 rounded-full blur-[120px] pointer-events-none"
+          className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#4F46E5]/30 rounded-full blur-[120px] pointer-events-none"
           variants={fadeIn}
         />
         <motion.div
@@ -57,7 +57,7 @@ export default function CTA() {
               If the standup meeting feels heavier than the work, it is time to replace it.
             </motion.h2>
             <motion.p
-              className="font-normal font-figtree text-[16px] sm:text-[18px] sm:leading-[28px] text-[#A5B4FC] max-w-[500px] mx-auto"
+              className="font-normal font-figtree text-[16px] sm:text-[18px] sm:leading-[28px] text-[#c3ccf7] max-w-[500px] mx-auto"
               variants={fadeUp}
             >
               Use Meeting Killer to keep the habit, remove the meeting, and give your team a faster way to stay aligned.
