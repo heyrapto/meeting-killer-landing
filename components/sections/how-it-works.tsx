@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { MessageSquare, Sparkles, Share2, Bot } from "lucide-react";
+import Image from "next/image";
 
 const steps = [
   {
@@ -9,21 +9,21 @@ const steps = [
     title: "Post your update",
     description:
       "Team members submit a daily update in text, image, audio, or video before the workspace deadline.",
-    icon: MessageSquare,
+    image: "/how-it-works/1.png",
   },
   {
     id: "02",
     title: "AI structures the signal",
     description:
       "Meeting Killer processes the update and turns it into a clean summary with completed work and blockers.",
-    icon: Bot,
+    image: "/how-it-works/2.png",
   },
   {
     id: "03",
     title: "Everyone stays aligned",
     description:
       "Updates appear in the team feed and can be shared to Slack so progress stays visible without another meeting.",
-    icon: Share2,
+    image: "/how-it-works/3.png",
   },
 ];
 
@@ -35,7 +35,7 @@ const LayeredCard = ({
   index: number;
 }) => (
   <motion.div
-    className="group relative w-full lg:w-[500px] h-[500px] lg:h-[600px] shrink-0"
+    className="group relative w-full lg:w-[500px] h-fit shrink-0"
     initial={{ opacity: 0, y: 60 }}
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{
@@ -95,10 +95,14 @@ export default function HowItWorks() {
           {steps.map((step, i) => (
             <LayeredCard key={i} index={i}>
               <div className="flex flex-col gap-10 h-full justify-center">
-
-                {/* ICON */}
-                <div className="w-24 h-24 bg-[#dfdef5] rounded-3xl flex items-center justify-center text-brand-60 border border-brand-10 shadow-sm transition-transform duration-500">
-                  <step.icon size={44} strokeWidth={1.25} />
+                {/* IMAGE */}
+                <div className="relative w-full aspect-video">
+                  <Image
+                    src={step.image}
+                    alt={step.title}
+                    fill
+                    className="object-cover"
+                  />
                 </div>
 
                 {/* TEXT */}
