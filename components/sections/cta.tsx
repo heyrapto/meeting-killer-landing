@@ -42,10 +42,10 @@ export default function CTA() {
           variants={fadeIn}
         >
           <Image
-            src="/hero-bg.webp"
+            src="/hero-bg.jpg"
             alt="Hero Image"
             fill
-            className="object-cover object-bottom"
+            className="object-cover object-bottom opacity-20"
             priority
           />
         </motion.div>

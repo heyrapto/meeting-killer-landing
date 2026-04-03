@@ -44,16 +44,12 @@ export default function Hero() {
         <Nav />
 
         <div className="space-y-12 sm:space-y-16 relative pt-[134px] pb-10 md:pb-24 px-5">
-          {/* subtle abstract background pattern instead of an image for a cleaner futuristic feel */}
           <motion.div
-            className="max-h-[1106px] h-full w-full absolute top-0 left-0 right-0 opacity-[0.03] pointer-events-none"
+            className="max-h-[1106px] h-full w-full absolute top-0 left-0 right-0"
             variants={fadeIn}
-            style={{
-              backgroundImage: 'radial-gradient(circle at 1px 1px, #000 1px, transparent 0)',
-              backgroundSize: '40px 40px'
-            }}
-          />
-
+          >
+            <Image src="/hero-bg.jpg" alt="Hero Image" fill priority className="opacity-20" />
+          </motion.div>
           <div className="flex items-center flex-col gap-10 text-center relative z-10 pt-10">
             <div className="max-w-[800px] mx-auto space-y-6">
 
@@ -97,11 +93,11 @@ export default function Hero() {
 
           <div className="flex justify-center items-center relative z-20">
             <motion.div
-              className="rounded-[32px] bg-[#F5F7FA]   p-4"
+              className="rounded-[32px] bg-[#F5F7FA] p-4"
               variants={fadeUp}
             >
               <Image
-                src="/hero.svg"
+                src="/dashboard.png"
                 alt="Hero Image"
                 width={1199}
                 height={676}
