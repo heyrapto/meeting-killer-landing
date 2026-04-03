@@ -83,7 +83,7 @@ export default function Nav() {
               className="text-[#99A0AE] hover:text-[#0E121B] transition-all duration-300 text-[14px] font-medium relative group"
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#4F46E5] transition-all duration-300 group-hover:w-full rounded-full"></span>
+              <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#4F46E5] transition-all duration-300  rounded-full"></span>
             </Link>
           ))}
         </div>
@@ -132,6 +132,7 @@ export default function Nav() {
       <AnimatePresence initial={false} mode="wait">
         {isMenuOpen && (
           <>
+            {/* translucent overlay to capture outside clicks */}
             <motion.div
               key="overlay"
               initial={{ opacity: 0 }}
@@ -139,7 +140,7 @@ export default function Nav() {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
               onClick={() => setIsMenuOpen(false)}
-              className="lg:hidden fixed top-[80px] left-0 w-full h-[calc(100vh-80px)] bg-black/10 z-40"
+              className="lg:hidden absolute top-full left-0 w-full h-[calc(100vh-80px)] bg-black/5 z-40"
               aria-hidden="true"
             />
 
@@ -150,15 +151,16 @@ export default function Nav() {
               animate="open"
               exit="closed"
               variants={menuVariants}
-              className="lg:hidden fixed top-[80px] left-0 z-50 w-full bg-white/80 backdrop-blur-xl backdrop-saturate-150 border-b border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.12)] origin-top will-change-transform rounded-b-2xl border-t border-[#F2F4F7]"
+              className="lg:hidden absolute top-full left-0 z-50 w-full bg-white/60 backdrop-blur-xl backdrop-saturate-150 border-b border-white/50 shadow-[0_8px_30px_rgba(0,0,0,0.12)] origin-top will-change-transform rounded-b-2xl"
             >
               <div className="flex flex-col p-6 space-y-6">
+                {/* Mobile Navigation Links */}
                 <div className="flex flex-col space-y-4 font-figtree">
                   {links.map((link) => (
                     <motion.div key={link.name} variants={itemVariants}>
                       <Link
                         href={link.href}
-                        className="text-[#525866] hover:text-[#0E121B] transition-all duration-300 text-[16px] font-medium py-2 block focus:outline-none focus-visible:ring-2 focus-visible:ring-black/10 rounded"
+                        className="text-[#525866] hover:text-[#0E121B] transition-all duration-300 text-[16px] font-medium py-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-black/10 rounded"
                         onClick={() => setIsMenuOpen(false)}
                       >
                         {link.name}
@@ -167,17 +169,18 @@ export default function Nav() {
                   ))}
                 </div>
 
-                <motion.div variants={itemVariants} className="space-y-3 pt-4 border-t border-[#F2F4F7]">
+                {/* Mobile Get Started Button */}
+                <motion.div variants={itemVariants} className="space-y-3">
                   <button className="bg-[linear-gradient(0deg,_#4F46E5,_#4F46E5),linear-gradient(180deg,_rgba(255,_255,_255,_0.16)_0%,_rgba(255,_255,_255,_0)_100%)] border border-white/12 shadow-[0px_0px_0px_1px_#4F46E5,0px_1px_2px_0px_#0E121B3D] text-white font-figtree font-medium px-6 py-3 rounded-[12px] w-full transition-all duration-200">
-                    <Link href="#" onClick={() => setIsMenuOpen(false)} className="w-full block">
+                    <Link href="/" onClick={() => setIsMenuOpen(false)}>
                       Start Free
                     </Link>
                   </button>
                   <button className="bg-white hover:bg-gray-50 border border-[#C0D5FF] text-[#122368] font-figtree font-medium px-6 py-3 rounded-[12px] w-full transition-all duration-200 shadow-sm">
                     <Link
-                      href="#"
+                      href="https://brainloom.gitbook.io/brainloom/"
+                      target="_blank"
                       onClick={() => setIsMenuOpen(false)}
-                      className="w-full block"
                     >
                       Log in
                     </Link>
