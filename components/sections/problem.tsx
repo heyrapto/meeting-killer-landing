@@ -44,9 +44,6 @@ export default function ProblemSection() {
                         transition={{ duration: 0.5 }}
                         className="text-center space-y-4 mb-16 px-4"
                     >
-                        <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
-                            Why teams switch
-                        </div>
                         <h2 className="text-[32px] sm:text-[40px] lg:text-[56px] font-semibold font-cal-sans text-[#122368] leading-[1.1] max-w-5xl mx-auto">
                             Daily standups are expensive <br className="hidden md:block" />when they happen live.
                         </h2>

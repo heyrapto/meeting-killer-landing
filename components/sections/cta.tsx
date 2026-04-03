@@ -2,6 +2,7 @@
 import { motion, type Variants } from "framer-motion";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function CTA() {
   const container: Variants = {
@@ -36,26 +37,20 @@ export default function CTA() {
       whileInView="show"
       viewport={{ once: true, amount: 0.2 }}
     >
-      <div className="bg-white rounded-[40px] overflow-hidden relative border border-[#F2F4F7] shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
-        {/* Subtle glow effects matching Hero style but adjusted for light theme */}
+      <div className="bg-white rounded-[40px] overflow-hidden lg:h-[695px] relative">
         <motion.div
-          className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#4F46E5]/5 rounded-full blur-[120px] pointer-events-none"
+          className="max-h-[1106px] h-full w-full absolute top-0 left-0 right-0"
           variants={fadeIn}
-        />
-        <motion.div
-          className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#818CF8]/5 rounded-full blur-[120px] pointer-events-none"
-          variants={fadeIn}
-        />
+        >
+          <Image
+            src="/hero-bg.webp"
+            alt="Hero Image"
+            fill
+            className="object-cover object-bottom"
+            priority
+          />
+        </motion.div>
 
-        {/* Dotted pattern matching Hero */}
-        <motion.div
-          className="h-full w-full absolute top-0 left-0 right-0 opacity-[0.03] pointer-events-none"
-          variants={fadeIn}
-          style={{
-            backgroundImage: 'radial-gradient(circle at 1px 1px, #000 1px, transparent 0)',
-            backgroundSize: '40px 40px'
-          }}
-        />
 
         <div className="relative max-w-[840px] mx-auto space-y-10 text-center py-20 sm:py-24 lg:py-32 px-5 z-10">
           <div className="space-y-6">
