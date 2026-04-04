@@ -59,9 +59,9 @@ export default function TypesSection() {
 
                 {/* Header */}
                 <div className="space-y-4">
-                    <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium shadow-sm">
+                    {/* <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium shadow-sm">
                         Best fit
-                    </div>
+                    </div> */}
 
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
@@ -73,7 +73,7 @@ export default function TypesSection() {
                         Made for teams that move fast and hate wasted meetings.
                     </motion.h2>
 
-                    <motion.p
+                    {/* <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -82,7 +82,7 @@ export default function TypesSection() {
                     >
                         Works especially well for teams that need high daily visibility
                         without constant interruptions.
-                    </motion.p>
+                    </motion.p> */}
                 </div>
 
                 {/* BENTO GRID */}

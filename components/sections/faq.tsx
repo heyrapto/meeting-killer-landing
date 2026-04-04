@@ -104,9 +104,9 @@ export default function FAQsSection() {
                     <h2 className="font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px] font-semibold leading-[110%] sm:leading-[105%] lg:leading-[64px] mb-4 sm:mb-6 lg:mb-[24px] tracking-[-1.44px] max-w-[800px] mx-auto">
                         Frequently Asked Questions
                     </h2>
-                    <p className="text-[#525866] font-figtree text-[14px] sm:text-[15px] lg:text-[16px] leading-[150%] tracking-[-0.32px] max-w-[600px] mx-auto">
+                    {/* <p className="text-[#525866] font-figtree text-[14px] sm:text-[15px] lg:text-[16px] leading-[150%] tracking-[-0.32px] max-w-[600px] mx-auto">
                         Everything you need to know about replacing your daily meetings with async updates using Meeting Killer.
-                    </p>
+                    </p> */}
                 </div>
 
                 {/* FAQ Items */}

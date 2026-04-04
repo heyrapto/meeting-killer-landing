@@ -66,9 +66,9 @@ export default function BenefitSection() {
     >
       <div className="space-y-16 max-w-[1450px] mx-auto">
         <motion.div variants={fadeUp} className="text-center space-y-4">
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
+          {/* <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
             Why it works
-          </div>
+          </div> */}
           <h4 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px] lg:leading-[64px]">
             Everything a standup should do.<br />None of the drag.
           </h4>

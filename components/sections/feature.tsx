@@ -39,9 +39,9 @@ export default function FeaturesSection() {
     >
       <div className="space-y-16 max-w-[1312px] mx-auto">
         <motion.div variants={fadeUp} className="text-center space-y-4">
-          <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
+          {/* <div className="inline-flex items-center px-4 py-1.5 rounded-full border border-[#C0D5FF] bg-white text-[#4F46E5] text-sm font-medium font-figtree shadow-sm">
             What you get
-          </div>
+          </div> */}
           <h3 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
             Simple for the team. <br /> Useful for managers.
           </h3>
@@ -62,7 +62,7 @@ export default function FeaturesSection() {
                 whileHover={{ scale: 1.015 }}
               >
                 <Image
-                  src={"/features/discover.webp"}
+                  src={"/features/flexible.png"}
                   alt="Flexible Update Formats"
                   fill
                   className="object-contain"
@@ -91,7 +91,7 @@ export default function FeaturesSection() {
                 whileHover={{ scale: 1.01 }}
               >
                 <Image
-                  src={"/features/marketplace.webp"}
+                  src={"/features/ai.png"}
                   alt="AI Structured Summaries"
                   fill
                   className="object-contain"
@@ -122,7 +122,7 @@ export default function FeaturesSection() {
                 whileHover={{ scale: 1.01 }}
               >
                 <Image
-                  src={"/features/decentralized.webp"}
+                  src={"/features/deadline.png"}
                   alt="Deadlines & Tracking"
                   fill
                   className="object-contain"
@@ -151,7 +151,7 @@ export default function FeaturesSection() {
                 whileHover={{ scale: 1.01 }}
               >
                 <Image
-                  src={"/features/chart.png"}
+                  src={"/features/quick-scan.png"}
                   alt="Quick Scan Feed"
                   fill
                   className="object-contain"
