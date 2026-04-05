@@ -33,7 +33,7 @@ interface FAQItemProps {
 
 function FAQItem({ faq, isOpen, onToggle }: FAQItemProps) {
     return (
-        <div className="border border-[#E2E8F0] rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] overflow-hidden bg-white shadow-sm hover:shadow-md transition-shadow duration-300">
+        <div className="border border-[#E2E8F0] rounded-[16px] sm:rounded-[20px] lg:rounded-[24px] overflow-hidden bg-white shadow-sm">
             <button
                 onClick={onToggle}
                 className="w-full px-6 sm:px-8 lg:px-[32px] py-6 sm:py-7 lg:py-[32px] flex items-center justify-between text-left cursor-pointer"
