@@ -57,14 +57,14 @@ export default function Hero() {
                 className="text-[#122368] text-4xl sm:text-5xl lg:text-[80px]/[1.1] font-cal-sans tracking-[-2%] font-bold"
                 variants={fadeUp}
               >
-                Replace the daily standup. Keep the team in sync.
+                Run daily standups without running a daily meeting.
               </motion.h1>
 
               <motion.p
                 className="text-center font-figtree text-[15px] sm:text-[18px] font-normal leading-[160%] tracking-[-0.32px] max-w-[680px] mx-auto text-[#525866]"
                 variants={fadeUp}
               >
-                Meeting Killer replaces live standup meetings with quick async updates. Your team submits progress by text, image, audio, or video, and AI turns it into a structured summary the whole team can scan fast.
+                Meeting Killer lets your team share updates in under a minute—text, screenshot, voice, or video. We turn each update into a clean summary with blockers called out, so everyone stays aligned without a call.
               </motion.p>
             </div>
 

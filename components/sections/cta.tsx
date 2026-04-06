@@ -57,13 +57,13 @@ export default function CTA() {
               className="font-semibold font-cal-sans text-[#122368] text-3xl sm:text-4xl md:text-[55px] leading-[1.1] -tracking-[0.01em]  mx-auto"
               variants={fadeUp}
             >
-              If standups feel like work, it’s time to replace it.
+              Keep the standup habit. Lose the standup meeting.
             </motion.h2>
             <motion.p
               className="font-normal font-figtree text-[16px] sm:text-[18px] sm:leading-[28px] text-[#525866]  mx-auto"
               variants={fadeUp}
             >
-              Use Meeting Killer to keep the habit, remove the meeting, and give your team a faster way to stay aligned.
+              Meeting Killer gives your team faster daily alignment without calendar drag—so people spend more time building and less time reporting.
             </motion.p>
           </div>
 

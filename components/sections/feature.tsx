@@ -43,7 +43,7 @@ export default function FeaturesSection() {
             What you get
           </div> */}
           <h3 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px]/[64px]">
-            Simple for the team. <br /> Useful for managers.
+            Easy for contributors. <br /> Instantly useful for managers.
           </h3>
         </motion.div>
 
@@ -70,10 +70,10 @@ export default function FeaturesSection() {
               </motion.div>
               <div className="space-y-4">
                 <header className="font-semibold font-cal-sans text-2xl md:text-5xl/[56px] text-[#122368] -tracking-[1%]">
-                  Flexible Update Formats
+                  Update Your Way
                 </header>
                 <p className="text-[#525866] font-light font-figtree text-base md:text-[26px]/[138%] -tracking-[2%] opacity-70">
-                  Let people send updates the way they naturally work: typed notes, screenshots, voice notes, or video.
+                  Type it, snap it, speak it, or record it. People can share progress in the format that feels fastest.
                 </p>
               </div>
             </motion.div>
@@ -99,10 +99,10 @@ export default function FeaturesSection() {
               </motion.div>
               <div className="space-y-4">
                 <header className="font-semibold font-cal-sans text-2xl md:text-5xl/[56px] text-[#122368] -tracking-[1%]">
-                  AI Structured Summaries
+                  AI Summaries That Get to the Point
                 </header>
                 <p className="text-[#525866] font-light font-figtree text-base md:text-[26px]/[138%] -tracking-[2%] opacity-70">
-                  Turn long, messy, or spoken updates into structured summaries your team can read quickly.
+                  We transcribe and structure updates into completed work, ongoing work, and blockers—ready to scan.
                 </p>
               </div>
             </motion.div>
@@ -130,10 +130,10 @@ export default function FeaturesSection() {
               </motion.div>
               <div className="space-y-4">
                 <header className="font-semibold font-cal-sans text-2xl md:text-5xl/[56px] text-[#122368] -tracking-[1%]">
-                  Deadlines & Tracking
+                  Timezone-Aware Deadlines
                 </header>
                 <p className="text-[#525866] font-light font-figtree text-base md:text-[26px]/[138%] -tracking-[2%] opacity-70">
-                  Keep a daily standup rhythm with timezone-aware deadlines and late submission tracking.
+                  Keep a consistent daily rhythm across regions with clear deadlines, late tracking, and no confusion.
                 </p>
               </div>
             </motion.div>
@@ -159,10 +159,10 @@ export default function FeaturesSection() {
               </motion.div>
               <div className="space-y-4">
                 <header className="font-semibold font-cal-sans text-5xl/[56px] text-[#122368] -tracking-[1%]">
-                  Quick Scan Feed & Admin Control
+                  Quick-Scan Feed & Admin Oversight
                 </header>
                 <p className="text-[#525866] font-light font-figtree text-base md:text-[26px]/[138%] -tracking-[2%] opacity-70">
-                  See progress and blockers at a glance. <br /> Complete visibility without the noise.
+                  See who submitted, who’s blocked, and what changed today—without digging through chat noise.
                 </p>
               </div>
             </motion.div>

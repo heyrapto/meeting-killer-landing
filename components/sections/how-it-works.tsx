@@ -8,21 +8,21 @@ const steps = [
     id: "01",
     title: "Post your update",
     description:
-      "Team members submit a daily update in text, image, audio, or video before the workspace deadline.",
+      "Team members submit a quick daily update before the workspace deadline using text, image, audio, or video.",
     image: "/how-it-works/1.png",
   },
   {
     id: "02",
     title: "AI structures the signal",
     description:
-      "Meeting Killer processes the update and turns it into a clean summary with completed work and blockers.",
+      "Meeting Killer transcribes and organizes each update into a clean summary with clear blocker visibility.",
     image: "/how-it-works/2.png",
   },
   {
     id: "03",
     title: "Everyone stays aligned",
     description:
-      "Updates appear in the team feed and can be shared to Slack so progress stays visible without another meeting.",
+      "Updates appear in the team feed and can be pushed to Slack, so progress stays visible without another meeting.",
     image: "/how-it-works/3.png",
   },
 ];
@@ -79,12 +79,11 @@ export default function HowItWorks() {
               {/* FIXED TITLE */}
               <h2 className="text-5xl lg:text-[80px] font-semibold text-gray-800 tracking-tight leading-[0.95] --font-rubik">
                 How it
-                <span className="text-[#4F46E5] italic">{" "}Works</span>
+                <span className="text-[#4F46E5] italic">{" "}works</span>
               </h2>
 
               <p className="text-gray-500 text-xl leading-relaxed">
-                Collection is effortless for the team. Reporting is automatic
-                for you. The perfect daily sync rhythm.
+                Three simple steps: submit, structure, stay aligned.
               </p>
             </div>
           </div>

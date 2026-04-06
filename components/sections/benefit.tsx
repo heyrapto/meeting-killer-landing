@@ -5,26 +5,26 @@ import { Timer, BellOff, LayoutDashboard, BookOpen } from "lucide-react";
 const benefits = [
   {
     id: 1,
-    title: "Save time",
-    description: "Stop spending team time on repeated verbal status updates.",
+    title: "Protect focus time",
+    description: "Replace repeated status calls with async updates that take minutes, not meetings.",
     icon: Timer,
   },
   {
     id: 2,
-    title: "Reduce interruptions",
-    description: "People update on schedule without breaking deep work.",
+    title: "Reduce daily interruptions",
+    description: "People update on schedule without breaking flow.",
     icon: BellOff,
   },
   {
     id: 3,
-    title: "Improve visibility",
-    description: "Managers get one clear view of team progress and blockers.",
+    title: "Surface blockers faster",
+    description: "Managers can spot and act on blockers early.",
     icon: LayoutDashboard,
   },
   {
     id: 4,
-    title: "Keep a reliable record",
-    description: "Every update is documented, organized, and easy to revisit.",
+    title: "Keep a trusted record",
+    description: "Every update is documented, structured, and easy to revisit.",
     icon: BookOpen,
   },
 ];
@@ -70,7 +70,7 @@ export default function BenefitSection() {
             Why it works
           </div> */}
           <h4 className="font-semibold font-cal-sans text-[#122368] text-[32px] sm:text-[40px] lg:text-[56px] lg:leading-[64px]">
-            Everything a standup should do.<br />None of the drag.
+            Everything standup should do none of the drag.
           </h4>
         </motion.div>
 

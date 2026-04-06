@@ -6,22 +6,22 @@ const faqsData = [
     {
         id: 1,
         question: "Do we need to join a call?",
-        answer: "No. Team members submit async updates inside Meeting Killer instead of joining a live daily standup.",
+        answer: "No. Daily updates are async. Teams can still jump on a call only when a blocker needs live discussion.",
     },
     {
         id: 2,
         question: "What kind of updates can people send?",
-        answer: "Teams can submit updates in text, image, audio, or video, depending on workspace settings.",
+        answer: "Text, screenshots, voice notes, and video updates (including in-app recording).",
     },
     {
         id: 3,
         question: "What does the AI do?",
-        answer: "Meeting Killer turns raw updates into structured summaries with completed work, ongoing work, and blockers.",
+        answer: "It transcribes audio/video and turns raw updates into structured summaries with completed work, ongoing work, and blockers.",
     },
     {
         id: 4,
         question: "Can managers review everything in one place?",
-        answer: "Yes. Managers and admins can review team updates, track participation, and monitor blockers from the workspace feed.",
+        answer: "Yes. Managers get a single feed to review submissions, blockers, and participation at a glance.",
     },
 ];
 

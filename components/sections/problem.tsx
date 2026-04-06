@@ -6,22 +6,22 @@ const comparisonFeatures = [
     {
         feature: "Standup Format",
         mk: "Async updates on your schedule",
-        live: "Recurring calls that interrupt work"
+        live: "Recurring calls that interrupt deep work"
     },
     {
         feature: "Update Media",
-        mk: "Text, audio, video, or image",
-        live: "Verbal only, relying on memory"
+        mk: "Text, screenshot, voice, or video",
+        live: "Verbal updates that are easy to miss or forget"
     },
     {
         feature: "Blocker Visibility",
-        mk: "Easy to spot instantly in the feed",
-        live: "Lost in chatter, delayed to next day"
+        mk: "Blockers are highlighted in one feed",
+        live: "Important blockers get buried in conversation"
     },
     {
         feature: "Progress Tracking",
-        mk: "Clear, searchable record of progress",
-        live: "No written record, easily forgotten"
+        mk: "Clear, searchable daily record",
+        live: "No reliable written history"
     }
 ];
 
@@ -45,7 +45,7 @@ export default function ProblemSection() {
                         className="text-center space-y-4 mb-16 px-4"
                     >
                         <h2 className="text-[32px] sm:text-[40px] lg:text-[56px] font-semibold font-cal-sans text-[#122368] leading-[1.1] max-w-5xl mx-auto">
-                            Daily standups are expensive <br className="hidden md:block" />when they happen live.
+                            Live standups cost more than time, <br /> they cost focus.
                         </h2>
                         {/* <p className="text-[#4F46E5] font-medium font-figtree text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
                             The problem is not status updates. The problem is pulling everyone into the same room at the same time, every single day. Meeting Killer gives teams the same daily rhythm without the interruption.

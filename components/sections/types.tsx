@@ -29,7 +29,7 @@ const teams = [
         className: "lg:col-span-1 lg:row-span-1",
     },
     {
-        name: "Cross-Functional",
+        name: "Cross-Functional Teams",
         image:
             "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=800&q=80",
         className: "lg:col-span-2 lg:row-span-1", // 👈 WIDE
@@ -70,7 +70,7 @@ export default function TypesSection() {
                         transition={{ duration: 0.5 }}
                         className="text-[32px] sm:text-[40px] lg:text-[48px] font-semibold text-[#122368] leading-[1.1] max-w-3xl mx-auto font-cal-sans"
                     >
-                        Made for teams that move fast and hate wasted meetings.
+                        Built for teams that ship fast and hate status meetings.
                     </motion.h2>
 
                     {/* <motion.p
