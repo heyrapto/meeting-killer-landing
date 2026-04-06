@@ -57,7 +57,7 @@ export default function Hero() {
                 className="text-[#122368] text-4xl sm:text-5xl lg:text-[80px]/[1.1] font-cal-sans tracking-[-2%] font-bold"
                 variants={fadeUp}
               >
-                Kill the daily standup. <br className="hidden sm:block" /> Keep the daily clarity.
+                Replace the daily standup. Keep the team in sync.
               </motion.h1>
 
               <motion.p

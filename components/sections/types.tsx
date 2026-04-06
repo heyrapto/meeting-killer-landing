@@ -143,7 +143,6 @@ export default function TypesSection() {
                         </motion.div>
                     ))}
                 </motion.div>
-
             </div>
         </section>
     );

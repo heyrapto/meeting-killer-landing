@@ -77,9 +77,9 @@ export default function HowItWorks() {
             <div className="space-y-6 max-w-md">
 
               {/* FIXED TITLE */}
-              <h2 className="text-5xl lg:text-[80px] font-semibold text-gray-800 tracking-tight leading-[0.95]">
-                How it{" "}
-                <span className="text-[#4F46E5] italic">Works</span>
+              <h2 className="text-5xl lg:text-[80px] font-semibold text-gray-800 tracking-tight leading-[0.95] --font-rubik">
+                How it
+                <span className="text-[#4F46E5] italic">{" "}Works</span>
               </h2>
 
               <p className="text-gray-500 text-xl leading-relaxed">
